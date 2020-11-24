@@ -34,12 +34,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/saranshbansal/react-fastfood-delivery-app"
-  },
-  "author": "saransh",
-  "license": "ISC",
+ 
   "browserslist": {
     "production": [
       ">0.2%",
