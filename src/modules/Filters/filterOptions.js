@@ -1,8 +1,17 @@
 import React from 'react';
-
+import "./menuStyle.css"
 const FilterOptions = (props) => {
   return (
     <div className="row">
+    <div className="menuS">
+    <h3>Menu</h3>
+    <ul className="listItems">
+      <li>Rice</li>
+      <li>Roti</li>
+      <li>Starters</li>
+      <li>Drinks</li>
+    </ul>
+    </div>
       <div className="col col-xs-3 col-md-3">
         <label htmlFor="namefilter" className="pull-left">Name:</label>
         <input name="namefilter" type="text" autoFocus placeholder="Search" className="inputBox" value={props.filterNameText ? props.filterNameText : ''} onChange={e => props.handleFilteration(e, 'name')} />
@@ -11,9 +20,9 @@ const FilterOptions = (props) => {
         <label htmlFor="categoryfilter" className="pull-left">Category:</label>
         <select name="categoryfilter" className="inputBox" value={props.filterCategoryText ? props.filterCategoryText : ''} onChange={e => props.handleFilteration(e, 'category')}>
           <option value="">{'All'}</option>
-          <option value="Burgers">{'Burgers'}</option>
-          <option value="Sandwitches">{'Sandwitches'}</option>
-          <option value="Pizzas">{'Pizzas'}</option>
+          <option value="Rice">{'Rice'}</option>
+          <option value="Roti">{'Roti'}</option>
+          <option value="Starters">{'Starters'}</option>
           <option value="Drinks">{'Drinks'}</option>
         </select>
       </div>

@@ -6,8 +6,8 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="jumbotron">
-          <h1>Order & Out</h1>
-          <p>A web application that allows users to order food.</p>
+          <h1>FOODERS</h1>
+          <p>Lets order some delicious food of your choice at the door in easy steps</p>
         </div>
         <Dashboard />
       </div>

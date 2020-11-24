@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from './action.js';
-import FilterOptions from "./FilterOptions";
+import FilterOptions from "./filterOptions";
 
 const initialstate = {
     allItems: [],

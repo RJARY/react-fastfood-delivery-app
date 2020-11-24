@@ -1,4 +1,5 @@
 {
+  "homepage": "http://RJARY.github.io/foodersWipro",
   "name": "react-fastfood-delivery-app",
   "version": "1.0.0",
   "description": "An elegant single page food ordering web application running on top of reactjs & redux.",
@@ -22,9 +23,12 @@
   },
   "devDependencies": {
     "bootstrap": "^3.4.1",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.5.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

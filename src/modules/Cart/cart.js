@@ -33,12 +33,12 @@ class Cart extends Component {
             return (
                 <tr key={index}>
                     <td>
-                        <span className="btn-remove" onClick={e => this.removeItemFromCart(index)} >{'x'}</span>
+                        <span className="btn-remove" title="close" onClick={e => this.removeItemFromCart(index)} >{'x'}</span>
                     </td>
                     <td>
                         {item.name}
                     </td>
-                    <td>{' X '}</td>
+                    <td >{' X '}</td>
                     <td>
                         {'₹' + item.discountPrice}
                     </td>
@@ -52,6 +52,7 @@ class Cart extends Component {
             );
         });
         return (
+            
             <div>
                 {this.props.selectedItems && this.props.selectedItems.length > 0 && (
                     <div className="cart-container">

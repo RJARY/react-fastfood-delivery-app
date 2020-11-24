@@ -1,7 +1,9 @@
+// import React from 'react';
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 
 const MenuItem = ({ data, addToCart }) => {
+    // const [count, setCount] = useState(0);
     const op = Number(data.price);
     const d = Number(data.discount);
     let finalPrice = op - (Number(op) * Number(d) / 100);
@@ -10,6 +12,8 @@ const MenuItem = ({ data, addToCart }) => {
         <div className="col-xs-12 col-md-12 card-container">
             <div className="card">
                 <div className="card-block">
+                <div>
+                <img src={data.image} height="120px" width="100px" alt="itemImages" /></div>
                     <span className="card-title">{data.name}</span>
                     <br />
                     <StarRatingComponent
@@ -31,7 +35,12 @@ const MenuItem = ({ data, addToCart }) => {
                     <span className="ingredients">{'Ingredients: ' + data.ingredients.toString()}</span>
                 </div>
             </div>
+            {/* <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+                    Click me
+            </button> */}
             <button onClick={e => addToCart(data)}>ADD</button>
+            
         </div>
     );
 };

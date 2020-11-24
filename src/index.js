@@ -12,7 +12,6 @@ import store from './shared/store.js';
 
 window._app_container = document.getElementById('root');
 
-//  wrap whole app in Provider so every component has access to the store
 render(
     <Provider store={store}>
         <BrowserRouter>
